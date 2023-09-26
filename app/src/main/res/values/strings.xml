@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">World Cup</string>
+    <string name="stadium_name">STADIUM_NAME</string>
+    <string name="dash">-</string>
+</resources>
