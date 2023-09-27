@@ -20,11 +20,13 @@ object DataManager {
 
     fun getNextMatch(): Match? {
         matchIndex++
+        if(matchIndex == matchesList.size) matchIndex= 0
         return getCurrentMatch()
     }
 
     fun getPreviousMatch(): Match? {
         matchIndex--
+        if(matchIndex == -1) matchIndex= matchesList.size-1
         return getCurrentMatch()
     }
 }

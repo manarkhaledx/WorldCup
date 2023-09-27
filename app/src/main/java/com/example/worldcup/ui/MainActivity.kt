@@ -47,7 +47,7 @@ class MainActivity : BaseActivity<ActivityMainBinding>() {
         bindMatch(DataManager.getCurrentMatch()!!)
     }
     private fun bindMatch(match: Match) {
-        binding?.apply {
+        binding.apply {
             tournamentNameTv.text = match.tournamentName
             matchNameTv.text = match.matchName
             matchDateTv.text = match.matchDate
